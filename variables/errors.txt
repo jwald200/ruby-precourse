@@ -1,0 +1,22 @@
+x = 0
+3.times do
+  x += 1
+end
+
+puts x #prints 3 to screen
+
+y = 0 
+3.times do
+  y += 1
+  c = y
+end
+puts c 
+#throws an error "undefined local variable or medhod"
+#since isn't run in the same scope it was created.
+
+NameError: undefined local variable or method `shoes' for main:Object
+  from (irb):3
+  from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
+
+  The program can't located the variable named shoes
+  
