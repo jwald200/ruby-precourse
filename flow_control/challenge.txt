@@ -1,0 +1,31 @@
+=begin
+(32 * 4) >= 129 # => false
+2. false != !true # => false
+3. true == 4 # => false
+4. false == (847 == '874') # => true
+5. (!true || (!(100 / 5) == 20) || ((328 / 4) == 82)) || false # => true
+=end
+
+#challenge 2
+def caps(text)
+  text.length >= 10 ? text.upcase : text
+end
+
+puts caps "go home please!"
+puts "go!"
+
+#challenge 3
+puts "Please ender a number between 0 and 100"
+number = gets.chomp.to_i
+msg = case number
+
+when 1..49
+  "#{number} is between 0 and 50"
+when  50..100
+  "#{number} is between 50 and 100"
+else
+  "#{number} is less"
+end
+puts msg
+
+
